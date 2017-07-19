@@ -1,0 +1,1380 @@
+@charset "UTF-8";
+/**
+ * @variables
+ */
+/**
+ * 初始化 html root 字体大小
+ */
+/**
+ * @functions
+ */
+/**
+ * Convert any unit from px to rem
+ *
+ * @param $size - the value in pixel you want to convert
+ *
+ * e.g. p { width: pxToRem(30px);}
+ *
+ */
+/**
+ * @mixins
+ */
+/**
+ * Convert any unit from px to rem
+ *
+ * @param $size - the value in pixel you want to convert
+ *
+ * e.g. p { width: pxToRem(30px);}
+ *
+ */
+/**
+ * Convert font-size from px to rem with px fallback
+ *
+ * @param $size - the value in pixel you want to convert
+ *
+ * e.g. p {@include fontSize(12px);}
+ *
+ */
+/**
+ * bootstrap 定制
+ */
+/**
+ * Bootstrap 全局组件样式自定义
+ */
+/* 页默认样式 */
+html {
+    font-size: 100px;
+    background: #fff; }
+
+body {
+    font-size: 16px;
+    font-size: 0.16rem;
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Segoe UI", "Microsoft Yahei", Tahoma, Arial, STHeiti, sans-serif;
+    background: #fff;
+    color: #000; }
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+    text-decoration: none;
+}
+
+a[title="站长统计"] {
+    display: none;
+}
+
+/* 栅格系统 */
+.col-xs-12 {
+    padding-right: 0.15rem;
+    padding-left: 0.15rem;
+}
+
+/* 排版样式 */
+.h1, h1 {
+    font-size: 36px;
+    font-size: 0.36rem;
+}
+
+.h2, h2 {
+    font-size: 30px;
+    font-size: 0.3rem;
+}
+
+.h3, h3 {
+    font-size: 24px;
+    font-size: 0.24rem;
+}
+
+.h4, h4 {
+    font-size: 18px;
+    font-size: 0.18rem;
+}
+
+.h5, h5 {
+    font-size: 14px;
+    font-size: 0.14rem;
+}
+
+.h6, h6 {
+    font-size: 12px;
+    font-size: 0.12rem;
+}
+
+/* 按钮样式 */
+.btn {
+    min-width: 1.6rem;
+    padding: 0.13rem 0.15rem;
+    font-size: 26px;
+    font-size: 0.26rem;
+    line-height: 1;
+    border-radius: 0.06rem;
+}
+
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: .65;
+    background-color: #D6D3CE;
+    color: #fff;
+}
+
+.btn-default {
+    color: #404040;
+    background-color: #f0f0f0;
+    border-color: #f0f0f0;
+}
+
+.btn-default:hover, .btn-default.focus, .btn-default:focus, .btn-default.active, .btn-default:active
+.btn-default.visited, .btn-default:visited {
+    color: #404040;
+    background-color: #ccc;
+    border-color: #ccc;
+}
+
+.btn-default.disabled, .btn-default.disabled.active, .btn-default.disabled.focus, .btn-default.disabled:active, .btn-default.disabled:focus, .btn-default.disabled:hover, .btn-default[disabled], .btn-default[disabled].active, .btn-default[disabled].focus, .btn-default[disabled]:active, .btn-default[disabled]:focus, .btn-default[disabled]:hover, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default.active, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:hover {
+    color: #404040 !important;
+    background-color: #ccc !important;
+    border-color: #ccc !important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.btn-primary:hover, .btn-primary.focus, .btn-primary:focus, .btn-primary.active, .btn-primary:active
+.btn-primary.visited, .btn-primary:active:hover, .btn-primary:visited {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #FF4F4D;
+    border-color: #FF4F4D;
+}
+
+.btn-danger:hover, .btn-danger.focus, .btn-danger:focus, .btn-danger.active, .btn-danger:active
+.btn-danger.visited, .btn-danger:visited {
+    color: #fff;
+    background-color: #FF4F4D;
+    border-color: #FF4F4D;
+}
+
+.btn-danger.disabled, .btn-danger.disabled.active, .btn-danger.disabled.focus, .btn-danger.disabled:active, .btn-danger.disabled:focus, .btn-danger.disabled:hover, .btn-danger[disabled], .btn-danger[disabled].active, .btn-danger[disabled].focus, .btn-danger[disabled]:active, .btn-danger[disabled]:focus, .btn-danger[disabled]:hover, fieldset[disabled] .btn-danger, fieldset[disabled] .btn-danger.active, fieldset[disabled] .btn-danger.focus, fieldset[disabled] .btn-danger:active, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .btn-danger:hover {
+    background-color: #D6D3CE;
+    border-color: #D6D3CE;
+}
+
+.btn-lg {
+    padding: 0.28rem 0.15rem;
+    font-size: 0.32rem;
+    line-height: 1;
+    border-radius: 0.06rem;
+}
+
+/* 标签样式 */
+.badge {
+    min-width: 0.1rem;
+    padding: 0.03rem 0.06rem;
+    font-size: 0.12rem;
+    font-weight: normal;
+    border-radius: 0.02rem;
+}
+
+.badge > * {
+    vertical-align: middle;
+}
+
+.badge-gender {
+    margin-left: 0.1rem;
+    font-weight: normal;
+    font-size: 0.18rem;
+}
+
+.badge-gender-male {
+    background-color: #99BBf7;
+}
+
+.badge-gender-female {
+    background-color: #f994ab;
+}
+
+.badge-gender > * {
+    display: inline-block;
+    vertical-align: middle;
+    height: .8em;
+}
+
+.badge-price {
+    padding: 0.04rem 0.1rem;
+    font-size: 0.2rem;
+    background-color: #76cbee;
+}
+
+/* 列表租 */
+.list-group {
+    padding-left: 0;
+    margin-bottom: 0.2rem;
+}
+
+.list-group-item {
+    /*position: relative;
+    display: block;*/
+    padding: 0.2rem;
+    /*margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;*/
+}
+
+.list-group-item,
+.list-group-item > .badge {
+    font-size: 28px;
+    font-size: 0.28rem;
+}
+
+/* 媒体对象 */
+.media {
+    margin-top: 0.15rem;
+}
+
+.media .media-left,
+.media .media > .pull-left,
+.media .media-right,
+.media .media > .pull-right {
+    padding-right: 0.1rem;
+}
+
+.media .media-body {
+    width: auto;
+}
+
+.media .media-body .media-heading {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.media .media-body .media-heading > * {
+    vertical-align: middle;
+}
+
+/* modal 弹窗 */
+.modal-backdrop {
+    z-index: 940;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 950;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+
+.modal-dialog {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 4.9rem !important;
+}
+
+.modal-dialog .modal-content {
+    background: #f3f3f3;
+    font-size: 0.34rem;
+    border: 0 none;
+    border-radius: 0.2rem;
+}
+
+.modal-dialog .modal-body {
+    height: 2.17rem !important;
+    padding: 0.15rem !important;
+}
+
+.modal-dialog .modal-body p {
+    font-size: 0.34rem;
+}
+
+.modal-dialog .modal-body p.phoneNumStyle {
+    margin-bottom: 0.32rem;
+    margin-top: 0.35rem;
+}
+
+.modal-dialog .modal-body p.signUpStyle {
+    margin-top: 0.7rem;
+}
+
+.modal-dialog .modal-body p.secretaryStyle {
+    margin-top: 0.4rem;
+}
+
+.modal-dialog .modal-body input {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.modal-dialog .modal-footer {
+    padding: 0;
+    border-top: 0 none;
+}
+
+.modal-dialog .modal-footer .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.modal-dialog .modal-footer .col-xs-6 {
+    padding: 0;
+}
+
+.modal-dialog .modal-footer .cancelStyle {
+    border-right: 1px solid rgba(218, 218, 218, 0.5);
+}
+
+.modal-dialog .modal-footer .btn {
+    border-top: 1px solid rgba(218, 218, 218, 0.5);
+    font-size: 0.34rem !important;
+    border-radius: 0;
+    color: cornflowerblue;
+    background: transparent !important;
+    height: 0.8rem;
+    line-height: 1.42857143 !important;
+}
+
+.modal-dialog .form-control {
+    display: block;
+    width: 4.36rem !important;
+    padding: 0.3rem 0.2rem;
+    font-size: 0.28rem;
+    color: #AEAEAE;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #D9D9D9;
+    border-radius: 0.05rem;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+/* 模态框垂直居中 */
+.modal {
+    text-align: center;
+    padding: 0 !important;
+}
+
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    /*  margin-right: -4px;*/
+}
+
+.modal-dialog {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/**
+* 通用类库
+*/
+/* Include this file in your html if you are using the CSP mode. */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak],
+.ng-cloak, .x-ng-cloak,
+.ng-hide:not(.ng-hide-animate) {
+    display: none !important;
+}
+
+ng\:form {
+    display: block;
+}
+
+.ng-animate-shim {
+    visibility: hidden;
+}
+
+.ng-anchor {
+    position: absolute;
+}
+
+/**
+ * 文字排版库
+ */
+.typography-ellipsis {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.typography-clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-height: 1.5;
+    max-height: 3em;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+}
+
+h1 > .typography-clamp, h2 > .typography-clamp, h3 > .typography-clamp, h4 > .typography-clamp, h5 > .typography-clamp, h6 > .typography-clamp, .h1 > .typography-clamp, .h2 > .typography-clamp, .h3 > .typography-clamp, .h4 > .typography-clamp, .h5 > .typography-clamp, .h6 > .typography-clamp {
+    line-height: 1.5;
+    max-height: 3em;
+}
+
+/**
+ * 布局用模块
+ */
+/**
+ * layout 工具库
+ *
+ * 命名规则:
+ * 1. layout- 为布局用工具库的统一前缀标识符
+ * 2. m 和 p 为 CSS 属性标识符, 分别代表 margin 和 padding
+ * 3. w h t r b l 分别代表 width height top right bottom left
+ * 4. 最后一位为数字位, 表示 CSS 属性的值
+ *
+ * 示例:
+ *      layout-m10  {margin: 10rem;}
+ *      layout-mw10  {margin-left:10rem;margin-right:10rem;}
+ *      layout-pr20  {padding-right:20rem;}
+ */
+
+.layout-mb0 {
+    margin-bottom: 0;
+}
+
+.layout-m5 {
+    margin: 0.05rem;
+}
+
+.layout-mw5 {
+    margin-left: 0.05rem;
+    margin-right: 0.05rem;
+}
+
+.layout-mh5 {
+    margin-top: 0.05rem;
+    margin-bottom: 0.05rem;
+}
+
+.layout-mt5 {
+    margin-top: 0.05rem;
+}
+
+.layout-mr5 {
+    margin-right: 0.05rem;
+}
+
+.layout-mb5 {
+    margin-bottom: 0.05rem;
+}
+
+.layout-ml5 {
+    margin-left: 0.05rem;
+}
+
+.layout-p5 {
+    padding: 0.05rem;
+}
+
+.layout-pw5 {
+    padding-left: 0.05rem;
+    padding-right: 0.05rem;
+}
+
+.layout-ph5 {
+    padding-top: 0.05rem;
+    padding-bottom: 0.05rem;
+}
+
+.layout-pt5 {
+    padding-top: 0.05rem;
+}
+
+.layout-pr5 {
+    padding-right: 0.05rem;
+}
+
+.layout-pb5 {
+    padding-bottom: 0.05rem;
+}
+
+.layout-pl5 {
+    padding-left: 0.05rem;
+}
+
+.layout-m10 {
+    margin: 0.1rem;
+}
+
+.layout-mw10 {
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+}
+
+.layout-mh10 {
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+
+.layout-mt10 {
+    margin-top: 0.1rem;
+}
+
+.layout-mr10 {
+    margin-right: 0.1rem;
+}
+
+.layout-mb10 {
+    margin-bottom: 0.1rem;
+}
+
+.layout-ml10 {
+    margin-left: 0.1rem;
+}
+
+.layout-p10 {
+    padding: 0.1rem;
+}
+
+.layout-pw10 {
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+}
+
+.layout-ph10 {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+}
+
+.layout-pt10 {
+    padding-top: 0.1rem;
+}
+
+.layout-pr10 {
+    padding-right: 0.1rem;
+}
+
+.layout-pb10 {
+    padding-bottom: 0.1rem;
+}
+
+.layout-pl10 {
+    padding-left: 0.1rem;
+}
+
+.layout-m15 {
+    margin: 0.15rem;
+}
+
+.layout-mw15 {
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
+}
+
+.layout-mh15 {
+    margin-top: 0.15rem;
+    margin-bottom: 0.15rem;
+}
+
+.layout-mt15 {
+    margin-top: 0.15rem;
+}
+
+.layout-mr15 {
+    margin-right: 0.15rem;
+}
+
+.layout-mb15 {
+    margin-bottom: 0.15rem;
+}
+
+.layout-ml15 {
+    margin-left: 0.15rem;
+}
+
+.layout-p15 {
+    padding: 0.15rem;
+}
+
+.layout-pw15 {
+    padding-left: 0.15rem;
+    padding-right: 0.15rem;
+}
+
+.layout-ph15 {
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+}
+
+.layout-pt15 {
+    padding-top: 0.15rem;
+}
+
+.layout-pr15 {
+    padding-right: 0.15rem;
+}
+
+.layout-pb15 {
+    padding-bottom: 0.15rem;
+}
+
+.layout-pl15 {
+    padding-left: 0.15rem;
+}
+
+.layout-m20 {
+    margin: 0.2rem;
+}
+
+.layout-mw20 {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+
+.layout-mh20 {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.layout-mt20 {
+    margin-top: 0.2rem;
+}
+
+.layout-mr20 {
+    margin-right: 0.2rem;
+}
+
+.layout-mb20 {
+    margin-bottom: 0.2rem;
+}
+
+.layout-ml20 {
+    margin-left: 0.2rem;
+}
+
+.layout-p20 {
+    padding: 0.2rem;
+}
+
+.layout-pw20 {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+}
+
+.layout-ph20 {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.layout-pt20 {
+    padding-top: 0.2rem;
+}
+
+.layout-pr20 {
+    padding-right: 0.2rem;
+}
+
+.layout-pb20 {
+    padding-bottom: 0.2rem;
+}
+
+.layout-pl20 {
+    padding-left: 0.2rem;
+}
+
+.layout-m25 {
+    margin: 0.25rem;
+}
+
+.layout-mw25 {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+
+.layout-mh25 {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.layout-mt25 {
+    margin-top: 0.25rem;
+}
+
+.layout-mr25 {
+    margin-right: 0.25rem;
+}
+
+.layout-mb25 {
+    margin-bottom: 0.25rem;
+}
+
+.layout-ml25 {
+    margin-left: 0.25rem;
+}
+
+.layout-p25 {
+    padding: 0.25rem;
+}
+
+.layout-pw25 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+.layout-ph25 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.layout-pt25 {
+    padding-top: 0.25rem;
+}
+
+.layout-pr25 {
+    padding-right: 0.25rem;
+}
+
+.layout-pb25 {
+    padding-bottom: 0.25rem;
+}
+
+.layout-pl25 {
+    padding-left: 0.25rem;
+}
+
+.layout-m30 {
+    margin: 0.3rem;
+}
+
+.layout-mw30 {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+
+.layout-mh30 {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.layout-mt30 {
+    margin-top: 0.3rem;
+}
+
+.layout-mr30 {
+    margin-right: 0.3rem;
+}
+
+.layout-mb30 {
+    margin-bottom: 0.3rem;
+}
+
+.layout-ml30 {
+    margin-left: 0.3rem;
+}
+
+.layout-p30 {
+    padding: 0.3rem;
+}
+
+.layout-pw30 {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+.layout-ph30 {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.layout-pt30 {
+    padding-top: 0.3rem;
+}
+
+.layout-pr30 {
+    padding-right: 0.3rem;
+}
+
+.layout-pb30 {
+    padding-bottom: 0.3rem;
+}
+
+.layout-pl30 {
+    padding-left: 0.3rem;
+}
+
+.layout-m35 {
+    margin: 0.35rem;
+}
+
+.layout-mw35 {
+    margin-left: 0.35rem;
+    margin-right: 0.35rem;
+}
+
+.layout-mh35 {
+    margin-top: 0.35rem;
+    margin-bottom: 0.35rem;
+}
+
+.layout-mt35 {
+    margin-top: 0.35rem;
+}
+
+.layout-mr35 {
+    margin-right: 0.35rem;
+}
+
+.layout-mb35 {
+    margin-bottom: 0.35rem;
+}
+
+.layout-ml35 {
+    margin-left: 0.35rem;
+}
+
+.layout-p35 {
+    padding: 0.35rem;
+}
+
+.layout-pw35 {
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
+}
+
+.layout-ph35 {
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+}
+
+.layout-pt35 {
+    padding-top: 0.35rem;
+}
+
+.layout-pr35 {
+    padding-right: 0.35rem;
+}
+
+.layout-pb35 {
+    padding-bottom: 0.35rem;
+}
+
+.layout-pl35 {
+    padding-left: 0.35rem;
+}
+
+.layout-m40 {
+    margin: 0.4rem;
+}
+
+.layout-mw40 {
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+}
+
+.layout-mh40 {
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.layout-mt40 {
+    margin-top: 0.4rem;
+}
+
+.layout-mr40 {
+    margin-right: 0.4rem;
+}
+
+.layout-mb40 {
+    margin-bottom: 0.4rem;
+}
+
+.layout-ml40 {
+    margin-left: 0.4rem;
+}
+
+.layout-p40 {
+    padding: 0.4rem;
+}
+
+.layout-pw40 {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+
+.layout-ph40 {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.layout-pt40 {
+    padding-top: 0.4rem;
+}
+
+.layout-pr40 {
+    padding-right: 0.4rem;
+}
+
+.layout-pb40 {
+    padding-bottom: 0.4rem;
+}
+
+.layout-pl40 {
+    padding-left: 0.4rem;
+}
+
+.layout-m45 {
+    margin: 0.45rem;
+}
+
+.layout-mw45 {
+    margin-left: 0.45rem;
+    margin-right: 0.45rem;
+}
+
+.layout-mh45 {
+    margin-top: 0.45rem;
+    margin-bottom: 0.45rem;
+}
+
+.layout-mt45 {
+    margin-top: 0.45rem;
+}
+
+.layout-mr45 {
+    margin-right: 0.45rem;
+}
+
+.layout-mb45 {
+    margin-bottom: 0.45rem;
+}
+
+.layout-ml45 {
+    margin-left: 0.45rem;
+}
+
+.layout-p45 {
+    padding: 0.45rem;
+}
+
+.layout-pw45 {
+    padding-left: 0.45rem;
+    padding-right: 0.45rem;
+}
+
+.layout-ph45 {
+    padding-top: 0.45rem;
+    padding-bottom: 0.45rem;
+}
+
+.layout-pt45 {
+    padding-top: 0.45rem;
+}
+
+.layout-pr45 {
+    padding-right: 0.45rem;
+}
+
+.layout-pb45 {
+    padding-bottom: 0.45rem;
+}
+
+.layout-pl45 {
+    padding-left: 0.45rem;
+}
+
+.layout-m50 {
+    margin: 0.5rem;
+}
+
+.layout-mw50 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.layout-mh50 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.layout-mt50 {
+    margin-top: 0.5rem;
+}
+
+.layout-mr50 {
+    margin-right: 0.5rem;
+}
+
+.layout-mb50 {
+    margin-bottom: 0.5rem;
+}
+
+.layout-ml50 {
+    margin-left: 0.5rem;
+}
+
+.layout-p50 {
+    padding: 0.5rem;
+}
+
+.layout-pw50 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.layout-ph50 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.layout-pt50 {
+    padding-top: 0.5rem;
+}
+
+.layout-pr50 {
+    padding-right: 0.5rem;
+}
+
+.layout-pb50 {
+    padding-bottom: 0.5rem;
+}
+
+.layout-pl50 {
+    padding-left: 0.5rem;
+}
+
+.layout-mt60 {
+    margin-top: 0.6rem;
+}
+
+/**
+ * flex 布局
+ */
+.layout-flex-container {
+    /* webkit, moz历史版本兼容 */
+    display: -webkit-box;
+    display: -moz-box;
+    /* IE私有写法 */
+    display: -ms-flexbox;
+    /* 标准写法 */
+    display: -webkit-flex;
+    display: flex;
+    /* 子元素 */
+    /* 填充方式: 默认 */
+    /* 方向: 横向排列 */
+    /* 方向: 竖直排列 */
+    /* justify */
+    /* align */
+}
+
+.layout-flex-container > .layout-flex-item {
+    /* webkit, moz历史版本兼容 */
+    -webkit-box-flex: initial;
+    -moz-box-flex: initial;
+    /* IE私有写法 */
+    -ms-flex: auto;
+    /* 标准写法 */
+    -webkit-flex: auto;
+    flex: auto;
+}
+
+.layout-flex-container.layout-flex-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.layout-flex-container.layout-flex-vertical {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.layout-flex-container.layout-flex-vertical > .layout-flex-item {
+    /* 修复微信旧版本 -webkit-box 下的 -webkit-box-flex:initial 在竖直排列时的 bug */
+    -webkit-box-flex: 1;
+}
+
+.layout-flex-container.layout-flex-justify-start {
+    -webkit-box-pack: start;
+    -webkit-justify-content: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+}
+
+.layout-flex-container.layout-flex-justify-center {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.layout-flex-container.layout-flex-justify-end {
+    -webkit-box-pack: end;
+    -webkit-justify-content: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+}
+
+.layout-flex-container.layout-flex-justify-space-between {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.layout-flex-container.layout-flex-justify-space-around {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.layout-flex-container.layout-flex-align-start {
+    -webkit-box-align: start;
+    -webkit-align-items: start;
+    -ms-flex-align: start;
+    -ms-grid-row-align: start;
+    align-items: start;
+}
+
+.layout-flex-container.layout-flex-align-center {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+}
+
+.layout-flex-container.layout-flex-align-end {
+    -webkit-box-align: end;
+    -webkit-align-items: end;
+    -ms-flex-align: end;
+    -ms-grid-row-align: end;
+    align-items: end;
+}
+
+/*
+ * 其他独立 UI
+ */
+.layout-fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.layout-fixed-bottom .btn-block {
+    border-radius: 0;
+}
+
+/* icon 图标库 */
+.icon {
+    display: inline-block;
+    width: 0.16rem;
+    height: 0.16rem;
+    background: no-repeat center center;
+}
+
+.icon-gender-male {
+    background-image: url("global/img/male.svg");
+}
+
+.icon-gender-female {
+    background-image: url("global/img/female.svg");
+}
+
+.icon-diamond {
+    background-image: url("global/img/diamond.png");
+}
+
+.icon-arrow-right {
+    background-image: url("global/img/arrow-right.png");
+}
+
+.icon {
+    background-size: contain;
+}
+
+/**
+ * media 卡片组件通用样式
+ */
+.layout-flex-container .media-left {
+    /* 活动海报 */
+}
+
+.layout-flex-container .media-body {
+    width: 100%;
+}
+
+.layout-flex-container .media-body .media-heading {
+    font-size: 30px;
+    font-size: 0.3rem;
+}
+
+.layout-flex-container .media-body .media-content {
+    font-size: 26px;
+    font-size: 0.26rem;
+}
+
+/* 淡色间隔条 */
+.card-gutter {
+    content: '';
+    display: block;
+    height: 0.3rem;
+    background-color: #f7f7f7;
+}
+
+/*
+文字排版
+1 限制一行显示
+2 限制三行显示
+*/
+
+/* 限制一行显示 */
+.typography-ellipsis {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* 限制三行显示 */
+.three-clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 1.5;
+    max-height: 3em;
+}
+
+/*
+swiper
+*/
+
+html, body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    color: #156d47;
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Segoe UI", "Microsoft Yahei", Tahoma, Arial, STHeiti, sans-serif;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: left;
+    background: #2eca89;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border: solid 1px darkgreen;
+}
+
+/*
+*
+*基础定制代码
+*
+*/
+.professionlist {
+    align-items: flex-start;
+    text-align: left;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    background-color: transparent;
+    color: blue;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+    background-color: #28b673;
+    color: #337ab7;
+}
+
+.questions {
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.questions p {
+    margin-top: -6.2rem;
+    position: absolute;
+    font-size: 0.3rem;
+    font-weight: bold;
+}
+
+.questions label{
+    font-weight: normal;
+}
+
+.questions div {
+    font-size: 0.3rem;
+    z-index: 10000;
+}
+
+.questions label {
+    font-size: 0.25rem !important;
+}
+
+textarea.form-control {
+    height: 2rem;
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    border: none;
+}
+
+.table > tbody > tr {
+    text-align: center;
+}
+
+.table > tbody > tr > th {
+    padding: 0.15rem;
+}
+
+.table > tbody > tr > td {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+tr>.titel {
+    font-size: 0.3rem;
+}
